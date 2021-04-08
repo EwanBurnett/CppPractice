@@ -1,6 +1,26 @@
 #pragma once
 // A basic description of Function implementation in C++.
 #include <iostream>
+
+//Function Comment Template:
+// Description of the Function's Purpose
+// Precondition: What has to happen in order for this function to be called?
+// Parameters:  ParamA - Does Something. (Brief description on its function)
+//              ParamB - Does Something Else. 
+// Return:      If the function returns something, what does it return?
+// Postcondition: What is the state of the program after the function has been called?
+
+// Converts a boolean value to an Integer of either 1 or 0. 
+// Parameters:  val - the value to be converted.
+// Return:      an Integer of either a 1 (if true), or 0 (if false).
+int BoolToInt(bool val) {
+    if (val == true)
+        return(1);
+    else
+        return(0);
+}
+
+
 // Function Signature Syntax:
 // [Return Type] Name ([Parameters]);
 bool Invalidate(bool validation) {
