@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Basics\Classes.cpp" />
+    <ClCompile Include="Basics\Functions.cpp" />
     <ClCompile Include="C++ Practice.cpp" />
   </ItemGroup>
   <ItemGroup>

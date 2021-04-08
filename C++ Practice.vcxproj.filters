@@ -21,6 +21,9 @@
     <ClCompile Include="Basics\Classes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Basics\Functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Basics\Functions.h">
