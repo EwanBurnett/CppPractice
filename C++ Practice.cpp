@@ -1,11 +1,26 @@
 // C++ Practice.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include "Basics/Functions.h"
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a = 7;
+    int b = 4;
+    std::cout << "AddValues (int) : " << AddValues(a, b) << std::endl;
+
+    a = 1.22;
+    b = 3.49;
+    std::cout << "AddValues (float) : " << AddValues(a, b) << std::endl;
+
+
+    int PassByValue = 5;
+    OutputByValue(PassByValue);
+    std::cout << "New Base Value : " << PassByValue << std::endl;
+
+    int PassByReference = -8;
+    OutputByReference(PassByReference);
+    std::cout << "New Base Value : " << PassByReference << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
