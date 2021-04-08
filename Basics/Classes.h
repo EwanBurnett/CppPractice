@@ -11,6 +11,7 @@
 //              age - how old the animal is
 //              isFed - whether the animal has been fed or not
 class Animal {
+protected:
     std::string name;
     int age;
     bool isFed;
@@ -26,14 +27,29 @@ public:
     void Feed() {
 
         if (isFed) {
-        std::cout << "Error: " << name << " has already been fed!";
+            std::cout << "Error: " << name << " has already been fed!" << std::endl;
         }
 
         else {
             isFed = true;
-            std::cout << "Fed " << name << "!";
+            std::cout << "Fed " << name << "!" << std::endl;
         }
     }
 
+
+};
+
+//Class inheritance allows for classes to have subclasses.
+class Dog : public Animal {
+public: 
+    using Animal::Animal; //Tells our subclass to use the parent constructor
+
+    void Speak(){
+        std::cout << "Woof!" << std::endl;
+    }
+
+    void Sit() {
+        std::cout << name << " sits down!" << std::endl;
+    }
 
 };
