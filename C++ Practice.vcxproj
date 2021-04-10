@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Basics\Classes.h" />
+    <ClInclude Include="Basics\ErrorHandling.h" />
     <ClInclude Include="Basics\Functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

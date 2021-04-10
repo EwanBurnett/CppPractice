@@ -2,11 +2,12 @@
 //
 #include "Basics/Functions.h"
 #include "Basics/Classes.h"
+#include "Basics/ErrorHandling.h"
 
 int main()
 {
    FunctionsDemo();
    ClassesDemo();
-
+   ErrorHandlingDemo();
 }
 
